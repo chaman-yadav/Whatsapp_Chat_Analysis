@@ -4,7 +4,7 @@
 
 WhatsApp Chat Analyzer is a Streamlit application that allows users to upload their WhatsApp chat data and gain various insights through statistical analysis and visualizations. The application processes the chat data to provide insights such as the most active users, common words used, activity heatmaps, and more.
 
-<a href="https://whatsappchatanalysis777.streamlit.app" target="_blank">Run WhatsApp Chat Analyzer on Streamlit</a>
+<a href="https://whatsappchatanalysis777.streamlit.app//" target="_blank">Run WhatsApp Chat Analyzer on Streamlit</a>
 
 
 ## Features
