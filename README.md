@@ -8,8 +8,8 @@ Click on the link below to access the deployed app:
 <a href="https://whatsappchatanalysis777.streamlit.app/" target="_blank">https://whatsappchatanalysis777.streamlit.app/</a>
 
 
-If the link does not load properly due to a server error, click on the URL and search it again or just type the URL:
-
+If the link does not load properly due to a server error or streamlit cloud error, click on the URL and search it again, or just type the URL:
+You have to upload your WhatsApp chat history of either an individual or a group and then click on analysis then you can see various statistics of that group.
 
 
 ## Features
