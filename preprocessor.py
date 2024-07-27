@@ -7,7 +7,7 @@ def convert_to_24hr(date_str, time_str):
     """Convert date and 12-hour time format to 24-hour time format with a 4-digit year."""
     datetime_str = f"{date_str} {time_str}"
     datetime_str = re.sub(r'\s+', '', datetime_str)  # Remove any extra spaces
-    in_datetime = datetime.strptime(datetime_str, '%d/%m/%y%I:%M%p')  # Parse input datetime
+    in_datetime = datetime.strptime(datetime_str, '%d/%m/%Y%I:%M%p')  # Parse input datetime
     out_datetime = datetime.strftime(in_datetime, '%d/%m/%Y %H:%M')  # Format output datetime
     return out_datetime
 
@@ -16,7 +16,7 @@ def preprocess(data):
     dates = []
     usernames = []
     messages = []
-    pattern = r'(\d{2}/\d{2}/\d{2}), (\d{1,2}:\d{2}\s*[ap]m) - ([^:]+): (.+?)(?=\d{2}/\d{2}/\d{2}, \d{1,2}:\d{2}\s*[ap]m - |$)'
+    pattern = r'(\d{2}/\d{2}/\d{4}), (\d{1,2}:\d{2}\s*[ap]m) - ([^:]+): (.+?)(?=\d{2}/\d{2}/\d{4}, \d{1,2}:\d{2}\s*[ap]m - |$)'
     matches = re.findall(pattern, data, re.DOTALL)
 
     # Extracting data from matches
